@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="posttest2(apd)"/>
+        <attribute name="authors" value="LENOVO"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-09-21 11:29:09 PM"/>
+        <attribute name="created" value="TEVOT1ZPO0xBUFRPUC1LOVJIRkY1ODsyMDI1LTA5LTIxOzA3OjU2OjUxIFBNOzI4MDA="/>
+        <attribute name="edited" value="TEVOT1ZPO0xBUFRPUC1LOVJIRkY1ODsyMDI1LTA5LTIxOzExOjI5OjA5IFBNOzM7MjkwOA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="suhu1, suhu2, suhu3, suhu4, suhu5, suhu6, jumlah, ratarata" type="Real" array="False" size=""/>
+            <declare name="NIM" type="Integer" array="False" size=""/>
+            <declare name="bool" type="Boolean" array="False" size=""/>
+            <output expression="&quot; suhu = [27, 33, 46, 55, 67, 92] &quot;" newline="True"/>
+            <output expression="&quot; konversi suhu celcius ke fahrenheit &quot;" newline="True"/>
+            <assign variable="suhu1" expression="(9/5)*27+32"/>
+            <output expression="&quot;suhu 1 = &quot; &amp; suhu1" newline="True"/>
+            <assign variable="suhu2" expression="(9/5)*33+32"/>
+            <output expression="&quot;suhu 2 = &quot; &amp; suhu2" newline="True"/>
+            <output expression="&quot; konversi suhu celcius ke kelvin &quot;" newline="True"/>
+            <assign variable="suhu3" expression="46 + 273.15"/>
+            <output expression="&quot;suhu 3 = &quot; &amp; suhu3" newline="True"/>
+            <assign variable="suhu4" expression="55 + 273.15"/>
+            <output expression="&quot;suhu 4 = &quot; &amp; suhu4" newline="True"/>
+            <output expression="&quot; konversi suhu celcius ke reamur &quot;" newline="True"/>
+            <assign variable="suhu5" expression="(4/5) * 67"/>
+            <output expression="&quot;suhu 5 = &quot; &amp; suhu5" newline="True"/>
+            <assign variable="suhu6" expression="(4/5) * 92"/>
+            <output expression="&quot;suhu 6 = &quot; &amp; suhu6" newline="True"/>
+            <assign variable="jumlah" expression="suhu1+suhu2+suhu3+suhu4+suhu5+suhu6"/>
+            <output expression="&quot; jumlah = &quot; &amp; jumlah" newline="True"/>
+            <assign variable="ratarata" expression="jumlah/6"/>
+            <output expression="&quot; rata_rata = &quot; &amp; ratarata" newline="True"/>
+            <assign variable="NIM" expression="52"/>
+            <assign variable="bool" expression="NIM&lt;ratarata"/>
+            <output expression="&quot; boolean = &quot; &amp; bool" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
