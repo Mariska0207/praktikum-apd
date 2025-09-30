@@ -12,7 +12,7 @@ if username == "mariska" and password == "052":
             print(nilai*0.3048,"meter")
         elif satuan == 'km':
             print(nilai*1000,"meter")
-        elif satuan == 'cm':
+        else:
             print(nilai/100,"meter")
     if konversi == 'massa':
         satuan=str(input("masukkan satuan: "))
@@ -25,7 +25,7 @@ if username == "mariska" and password == "052":
             print(nilai/1000,"kg")
         elif satuan == 'dag':
             print(nilai/100,"kg")
-        elif satuan == 'dg':
+        else:
             print(nilai/10000,"kg")
     if konversi == 'suhu':
         satuan=str(input("masukkan satuan: "))
@@ -34,14 +34,14 @@ if username == "mariska" and password == "052":
             print(nilai+273.15 ,"kelvin")
         elif satuan == 'fahrenheit':
             print((nilai+459.67)*5/9,"kelvin")
-        elif satuan == 'reamur':
+        else:
             print((nilai/0.8)+273.15,"kelvin")
     if konversi == 'waktu':
         satuan=str(input("masukkan satuan: "))
         nilai=float(input("masukkan nilai: "))
         if satuan == 'menit':
             print(nilai*60, "detik")
-        elif satuan == 'jam':
+        else:
             print(nilai*3600, "detik")
     if konversi == 'mata uang':
         satuan=str(input("masukkan satuan: "))
@@ -56,9 +56,11 @@ if username == "mariska" and password == "052":
             print(nilai*0.1061, "yen")
         elif satuan == 'dollar':
             print(nilai*0.8546, "euro")
-        elif satuan == 'euro':
+        else:
             print(nilai*1.170, "dollar")
-if username != "mariska" and password == "052":
+elif username != "mariska" and password == "052":
     print("username salah")
 elif username == "mariska" and password != "052":
     print("password salah")
+else:
+    print("login gagal")
