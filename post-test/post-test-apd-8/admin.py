@@ -33,11 +33,12 @@ def perbaruibarang():
     daftarbarang()
     try:
         pilih = int(input("masukkan nomor yang mau diperbarui: "))
-        for pilih in barang:
-            i = pilih
-            break
+        for i in barang:
+            if i == pilih:
+                break
         else:
             print("nomor tidak valid, coba lagi")
+            return
     except ValueError:
         print("!!!!! Input harus berupa angka. Silakan coba lagi. !!!!!".center(50))
         return
